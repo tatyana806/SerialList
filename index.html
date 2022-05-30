@@ -5,11 +5,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Открытие ведьм - даты выхода серий</title>
+    <style>
+        body {
+            font-family: Verdana;
+        }
+        /*шрифты????*/
+        
+        h2 {
+            color: grey;
+            font-size: 99%;
+        }
+        
+        ul,
+        li {
+            margin: 0;
+            margin-right: 3px;
+            padding: 0;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        table {
+            border: 1px solid lightgrey;
+            /*border-collapse: collapse;*/
+            border-radius: 20px;
+            width: 60%;
+            /*padding: 10px;*/
+        }
+        
+        tr,
+        td {
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <table>
+        <tr>
+            <td rowspan="3">
+                <img src="A_Discovery_of_Witches_2018.jpg" title="A Discovery of Witches Poster" alt="A Discovery of Witches Poster" style="float: left; width: auto; height: 350px;">
+            </td>
+            <td>
+                <h1>Открытие ведьм</h1>
+                <h2>A Discovery of Witches <span style="color: lightgrey;">(2018 — ...)</span></h2>
+                <ul style="list-style-type: none; font-size: 75%;">
+                    <li><a href="https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%B0%D0%BC%D0%B0_(%D0%B6%D0%B0%D0%BD%D1%80)">
+					Драма</a></li>
+                    <li>|</li>
+                    <li><a href="https://ru.wikipedia.org/wiki/%D0%A4%D1%8D%D0%BD%D1%82%D0%B5%D0%B7%D0%B8">
+					Фэнтези</a></li>
+                    <li>|</li>
+                    <li><a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%BB%D0%BE%D0%B4%D1%80%D0%B0%D0%BC%D0%B0">
+					Мелодрама</a></li>
+                    <li>- 45 мин.</li>
+                </ul>
+                <br>
+                <hr>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                8.7
+                <br>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 80%">
+                Британский телесериал, основанный на романе «Открытие ведьм» из трилогии Деборы Харкнесс «Все души». Премьера сериала состоялась 14 сентября 2018 года на телеканале Sky One.<br>Диана Бишоп — историк и ведьма поневоле — случайно обнаруживает
+                заколдованный манускрипт в оксфордской библиотеке. Чтобы раскрыть содержащиеся в книге тайные знания о магических существах, она вынуждена вновь погрузиться в мир магии. Ей предлагает свою помощь Мэттью Клермонт, таинственный генетик и
+                по совместительству вампир. Вопреки многовековому недоверию между ведьмами и вампирами, они решают вместе защитить книгу и раскрыть таящиеся в ней тайны, противостоя угрозам сверхъестественного мира.
+            </td>
+        </tr>
+    </table>
+    <div style="border: 1px solid lightgrey; margin-top: 10px; padding: 10px; width: 59%; border-radius: 10px;">
+        <p>Промо к сериалу:</p>
+        <iframe src="https://www.youtube.com/embed/NxD7V72uI68" title="A Discovery of Witches Promo" style="border: none; width: 320px; height: 200px;">
+		</iframe>
+    </div>
+    <form style="border: 1px solid lightgrey; margin-top: 10px; padding: 10px; width: 59%; border-radius: 10px;">
+        <label for="see" title="Я смотрю этот сериал">Смотрю</label>
+        <input type="radio" name="howsee" id="see">
+        <label for="stopsee" title="Я приостановила просмотр этого сериала">Приостановила пр.</label>
+        <input type="radio" name="howsee" id="stopsee">
+        <label for="dropsee" title="Я бросила смотреть этот сериал">Бросила см.</label>
+        <input type="radio" name="howsee" id="dropsee">
+        <label for="plansee" title="Я планирую смотреть этот сериал">Планирую см.</label>
+        <input type="radio" name="howsee" id="plansee">
+        <label for="notsee" title="Я не смотрю этот сериал">Не смотрю</label>
+        <input type="radio" name="howsee" id="notsee">
+    </form>
+    <ul style="list-style-type: none; border: 1px solid lightgrey; margin-top: 10px; padding: 10px; width: 59%; border-radius: 10px;">
+        <li><i>Сезон:</i></li>
+        <li>
+            <a href="#s1" onclick="show('seas1')">1</a>
+        </li>
+        <li>|</li>
+        <li>
+            <a href="#s2" onclick="show('seas2')">2</a>
+        </li>
+        <li>|</li>
+        <li>
+            <a href="#s3" onclick="show('seas3')">3</a>
+        </li>
+    </ul>
+    <br>
+    <table id="seas3" style="display: none;">
+        <tr>
+            <th id="s3" colspan="3" style="float: left; padding: 10px;">Сезон 3</th>
+        </tr>
+        <tr>
+            <td>3x01</td>
+            <td>Серия 1</td>
+            <td>Дата неизвестна</td>
+        </tr>
+    </table>
+    <br>
+    <table id="seas2" style="display: none;">
+        <tr>
+            <th id="s2" colspan="3" style="float: left; padding: 10px;">Сезон 2</th>
+        </tr>
+        <tr>
+            <td>2x01</td>
+            <td>Серия 1</td>
+            <td>08 января 2021 </td>
+        </tr>
+        <tr>
+            <td>2x02</td>
+            <td>Серия 2</td>
+            <td>08 января 2021 </td>
+        </tr>
+        <tr>
+            <td>2x03</td>
+            <td>Серия 3</td>
+            <td>08 января 2021 </td>
+        </tr>
+    </table>
+    <br>
+    <table id="seas1">
+        <tr>
+            <th id="s1" colspan="3" style="float: left; padding: 10px;">Сезон 1</th>
+        </tr>
+        <tr>
+            <td>1x01</td>
+            <td>Серия 1</td>
+            <td>14 сентября 2018</td>
+        </tr>
+        <tr>
+            <td>1x02</td>
+            <td>Серия 2</td>
+            <td>14 сентября 2018</td>
+        </tr>
+        <tr>
+            <td>1x03</td>
+            <td>Серия 3</td>
+            <td>14 сентября 2018</td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+        function show(id) {
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
